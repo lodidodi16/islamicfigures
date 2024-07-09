@@ -257,4 +257,156 @@ h1, h2 {
             </table>
         </div>
     </body>
-    </html>
+
+    <!-- ----- FOOTER ----- -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- footer-logo -->
+        <div class="footer-logo-container">
+          <a class="footer-logo" href="./index.html"
+            >ISLAMIC<span class="footer-studio">FIGURES</span></a
+          >
+          <p class="footer-text">
+            DISCLAIMER <br>
+            This project assignment is for eduational purposes only. While <br>
+            we strive for accuracy, we make no guarantees regarding the <br>
+            completeness or reliability of the information provided. Use <br>
+            this material at your own risk.
+<br><br>
+            Copyright designed and developed by Liyan & Hawa
+          </p>
+        </div>
+
+        
+        <!-- footer-subscribe -->
+        <div class="footer-subscribe-container">
+          <p class="subscribe-text">Subscribe</p>
+          <form class="footer-subcribe-form">
+            <label class="footer-label" for="email"
+              ><input
+                class="footer-email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+            /></label>
+            <button type="submit" class="footer-submit-btn">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!----- MODAL ----->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div></div>
+        <p class="option-title">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-option">
+          <div class="option-field">
+            <label class="option-label" for="user-name">Name</label>
+            <div class="name-container">
+              <input
+                class="option-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder=""
+              />
+              <svg class="icon-name" width="18" height="24">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="option-field">
+            <label class="option-label" for="tel">Phone</label>
+            <div class="name-container">
+              <input
+                class="option-input"
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder=""
+              />
+              <svg class="icon-name" width="18" height="24">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="option-field">
+            <label class="option-label" for="mail">Email</label>
+            <div class="name-container">
+              <input
+                class="option-input"
+                type="email"
+                name="email"
+                id="mail"
+                placeholder=""
+              />
+              <svg class="icon-name" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="option-field-comment">
+            <label class="option-label" for="user-comment">Comment</label>
+            <textarea
+              class="option-textarea"
+              name="user-comment"
+              id="user-comment"
+              cols="30"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="modal-terms-container">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            /><label class="checkbox-container" for="user-privacy">
+              <span class="checkbox-icon">
+                <svg width="10" height="8" class="icon-checkbox">
+                  <use href="./images/icons.svg#icon-checked"></use></svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="modal-privacy-link" href="#">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="modal-send-btn">Send</button>
+        </form>
+        <div class="close-button">
+          <button data-modal-close type="button" class="modal-close">
+            <svg class="modal-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-vector"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!----- SCROLL UP ----->
+
+    <button class="scrollup visually-hidden" type="button">
+      <svg class="scrollup__icon" aria-label="Scroll up icon">
+        <use href="./images/icons-sprite.svg#icon-arrow-up"></use>
+      </svg>
+    </button>
+
+    <!--- script --->
+    <script src="./js/modal.js"></script>
+    <script src="./js/scroll-up.js"></script>
+    <script src="./js/sticky-header.js"></script>
+    <script src="./js/theme-switcher.js"></script>
+  </body>
+</html>
