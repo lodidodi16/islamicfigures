@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta
+      name="description"
+      content="WebStudio - Responsive Web Design Project with HTML, CSS, and JavaScript. Explore interactive features, portfolio animations, and innovative web solutions."
+    />
+    <meta
+      name="keywords"
+      content="WebStudio, Responsive Web Design, HTML, CSS, JavaScript, Animation, Freelance, Web Development"
+    />
+    <meta name="author" content="Alex Smagin" />
+    <title>IslamicFigures Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+<!-- ----- HEADER ----- -->
+<header class="head">
+    <div class="container">
+      <!-- header nav -->
+      <nav class="head-nav">
+        <a href="index.html" class="head-logo"
+          >Islamic<span class="head-studio">Figures</span></a
+        >
+        <ul class="head-menu">
+          <li class="head-items">
+            <a href="index.html" class="head-link">Home</a>
+          </li>
+          <li class="head-items">
+            <a href="islamicfigures.html" class="head-link active">Islamic Figures</a>
+          </li>
+          <li class="head-items">
+            <a href="contact.html" class="head-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+        <!-- header address -->
+        <address class="head-address">
+          <ul class="head-address-menu">
+            <li class="head-address-items">
+              <a href="mailto:info@devstudio.com" class="head-contacts"
+                >info@islamicfigures.com</a
+              >
+            </li>
+            <li class="head-address-items">
+              <a href="tel:+110001111111" class="head-contacts"
+                >+60 123 456 789</a
+              >
+            </li>
+            <li class="head-address-items">
+              <span>
+                <label class="switch" aria-label="theme switch">
+                  <input class="theme-switch" type="checkbox" />
+                  <svg class="switch-icon-moon">
+                    <use href="./images/icons-sprite.svg#icon-moon"></use>
+                  </svg>
+                  <svg class="switch-icon-sun">
+                    <use href="./images/icons-sprite.svg#icon-sun"></use>
+                  </svg>
+                </label>
+              </span>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <!-- ----- MAIN ----- -->
+    <main>
+      <section class="features">
+        <div class="container">
+          <h1 class="visually-hidden">Islamic Figures</h1>
+
+          <!-- features -->
+          <ul class="portfolio-menu">
+            <li class="portfolio-items">
+                <a href="fiqh.html">
+                    <button type="button" class="portfolio-btn">Fiqh</button>
+                </a>
+            </li>
+            <li class="portfolio-items">
+                <a href="aqidah.html">
+                    <button type="button" class="portfolio-btn">Aqidah</button>
+                </a>
+            </li>
+            <li class="portfolio-items">
+              <a href="hadis.html">
+                  <button type="button" class="portfolio-btn">Hadis</button>
+              </a>
+          </li>
+          <li class="portfolio-items">
+            <a href="tasawuf.html">
+                <button type="button" class="portfolio-btn">Tasawuf</button>
+            </a>
+        </li>
+        <li class="portfolio-items">
+          <a href="sejarahislam.html">
+              <button type="button" class="portfolio-btn">Sejarah Islam</button>
+          </a>
+      </li>
+        </ul>
+
+        
+
+          <!-- app-pictures -->
+          <ul class="app-menu">
+            <li class="app-items">
+              <a class="app-link" href="biodata1.html">
+                <div class="app-image">
+                  <img
+                    src="https://kinderhive.my/templates/yootheme/cache/83/team-udd-83c2eeb5.jpeg"
+                    alt="ustaz don daniyal"
+                    width="360"
+                    height="300"
+                  />
+                  <p class="app-image-text">
+                    Click Here to Go To the Profile
+                  </p>
+                </div>
+                <div class="app-container">
+                  <h2 class="app-title">Ustaz Don Daniyal Bin Don Biyajid</h2>
+                  <a href="ustazdondaniyal.html">
+                    <button type="button" class="portfolio-btn">Seedlist</button>
+                </a>
+                </div>
+              </a>
+            </li>
+            <li class="app-items">
+              <a class="app-link" href="biodata2.html">
+                <div class="app-image">
+                  <img
+                    src="https://assets.bharian.com.my/images/articles/toliahtarik5_1696503337.jpg"
+                    alt="ustaz abdullah khairi"
+                    width="360"
+                    height="300"
+                  />
+                  <p class="app-image-text">
+                    Click Here to Go To the Profile
+                  </p>
+                </div>
+                <div class="app-container">
+                  <h2 class="app-title">Ustaz Abdullah Khairi Bin Haroon</h2>
+                  <a href="ustazdondaniyal.html">
+                    <button type="button" class="portfolio-btn">Seedlist</button>
+                </a>
+                </div>
+              </a>
+            </li>
+            <li class="app-items">
+                <a class="app-link" href="biodata3.html">
+                  <div class="app-image">
+                    <img
+                      src="https://yt3.googleusercontent.com/TrYGEyKVsN-JMSW8mC33HLebYq4JPTvnW8t0WdJsHUWIIrv7AqyBUVF-mRcQMG7mrQ2n2NUj0A=s900-c-k-c0x00ffffff-no-rj"
+                      alt="syamsul debat"
+                      width="360"
+                      height="300"
+                    />
+                    <p class="app-image-text">
+                      Click Here to Go To the Profile
+                    </p>
+                  </div>
+                  <div class="app-container">
+                    <h2 class="app-title">Ustaz Syamsul Amri Bin Ismail (Syamsul Debat)</h2>
+                    <a href="syamsuldebat.html">
+                      <button type="button" class="portfolio-btn">Seedlist</button>
+                  </a>
+                  </div>
+                </a>
+              </li>
+              <li class="app-items">
+                <a class="app-link" href="biodata4.html">
+                  <div class="app-image">
+                    <img
+                      src="https://www.ukm.my/tncpi/wp-content/uploads/2022/03/Izhar-Ariff-1.jpg"
+                      alt="ustaz mohd izhar ariff"
+                      width="360"
+                      height="300"
+                    />
+                    <p class="app-image-text">
+                      Click Here to Go To the Profile
+                    </p>
+                  </div>
+                  <div class="app-container">
+                    <h2 class="app-title">Ustaz Mohd Izhar Ariff Bin Mohd Kashim</h2>
+                    <a href="ustazmohdizharariff.html">
+                      <button type="button" class="portfolio-btn">Seedlist</button>
+                  </a>
+                  </div>
+                </a>
+              </li>
+              <li class="app-items">
+                <a class="app-link" href="biodata5.html">
+                  <div class="app-image">
+                    <img
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRO_lpUqqPhCBULmX7VRNuvWRxGJGzhCpe4eiP-8ZAy7duAAfk_XYJPiB0FIlTcZeKJ42wxt7SJbZqp7yqETcSm-cYQ2LRbIoEaETTM8UZfXostHJ-CAwDNdihNnaA2-hJm6ZO7uBkUUKD/s1600/FB_IMG_1585926589344.jpg"
+                      alt="ustaz neezam al-banjari"
+                      width="360"
+                      height="300"
+                    />
+                    <p class="app-image-text">
+                      Click Here to Go To the Profile
+                    </p>
+                  </div>
+                  <div class="app-container">
+                    <h2 class="app-title">Ustaz Neezam Al-Banjari</h2>
+                    <a href="ustazneezam.html">
+                      <button type="button" class="portfolio-btn">Seedlist</button>
+                  </a>
+                  </div>
+                </a>
+              </li>
+              <li class="app-items">
+                <a class="app-link" href="biodata6.html">
+                  <div class="app-image">
+                    <img
+                      src="https://img.astroawani.com/2023-04/81680307461_UstazWadiAnnuar.jpg"
+                      alt="ustaz wadi anuar"
+                      width="360"
+                      height="300"
+                    />
+                    <p class="app-image-text">
+                      Click Here to Go To the Profile
+                    </p>
+                  </div>
+                  <div class="app-container">
+                    <h2 class="app-title">Ustaz Wadi Anuar</h2>
+                  </div>
+                </a>
+              </li>
+              <li class="app-items">
+                <a class="app-link" href="biodata7.html">
+                  <div class="app-image">
+                    <img
+                      src="https://www.sinarharian.com.my/uploads/images/2021/12/01/1329510.jpg"
+                      alt="ustaz dato seri haji zulkifli mohamad al-bakri"
+                      width="360"
+                      height="300"
+                    />
+                    <p class="app-image-text">
+                      Click Here to Go To the Profile
+                    </p>
+                  </div>
+                  <div class="app-container">
+                    <h2 class="app-title">Ustaz Dato Seri Haji Zulkifli Mohamad Al-Bakri</h2>
+                  </div>
+                </a>
+              </li>
+              <li class="app-items">
+                <a class="app-link" href="biodata8.html">
+                  <div class="app-image">
+                    <img
+                      src="https://img.astroawani.com/2019-07/61562065817_AsriZainul.jpg"
+                      alt="prof madya dato' dr mohd asri zainal abidin"
+                      width="360"
+                      height="300"
+                    />
+                    <p class="app-image-text">
+                      Click Here to Go To the Profile
+                    </p>
+                  </div>
+                  <div class="app-container">
+                    <h2 class="app-title">Prof Madya Dato' Dr Mohd Asri Zainal Abidin</h2>
+                  </div>
+                </a>
+              </li>
+              <li class="app-items">
+                <a class="app-link" href="biodata9.html">
+                  <div class="app-image">
+                    <img
+                      src="https://www.mstar.com.my/image/830/553?url=https%3A%2F%2Fapicms.mstar.com.my%2Fuploads%2Fimages%2F2022%2F12%2F15%2F1863648.jpg"
+                      alt="Prof. Dr Mohd Ridhuan Tee Abdullah"
+                      width="360"
+                      height="300"
+                    />
+                    <p class="app-image-text">
+                      Click Here to Go To the Profile
+                    </p>
+                  </div>
+                  <div class="app-container">
+                    <h2 class="app-title">Prof. Dr Mohd Ridhuan Tee Abdullah</h2>
+                  </div>
+                </a>
+              </li>
+           
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- ----- FOOTER ----- -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- footer-logo -->
+        <div class="footer-logo-container">
+          <a class="footer-logo" href="./index.html"
+            >ISLAMIC<span class="footer-studio">FIGURES</span></a
+          >
+          <p class="footer-text">
+            Preserving web archive collection of islamic figures based in Malaysia only.
+          </p>
+        </div>
+
+        <!-- footer-social-menu -->
+        <div class="footer-social-container">
+          <p class="footer-social-text">Social media</p>
+          <ul class="footer-social-menu">
+            <li class="footer-social-items">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-items">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-items">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-items">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- footer-subscribe -->
+        <div class="footer-subscribe-container">
+          <p class="subscribe-text">Subscribe</p>
+          <form class="footer-subcribe-form">
+            <label class="footer-label" for="email"
+              ><input
+                class="footer-email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+            /></label>
+            <button type="submit" class="footer-submit-btn">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!----- SCROLL UP ----->
+
+    <button class="scrollup visually-hidden" type="button">
+      <svg class="scrollup__icon" aria-label="Scroll up icon">
+        <use href="./images/icons-sprite.svg#icon-arrow-up"></use>
+      </svg>
+    </button>
+
+    <script src="./js/scroll-up.js"></script>
+    <script src="./js/theme-switcher.js"></script>
+  </body>
+</html>

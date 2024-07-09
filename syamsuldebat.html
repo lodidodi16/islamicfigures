@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta
+      name="description"
+      content="WebStudio - Responsive Web Design Project with HTML, CSS, and JavaScript. Explore interactive features, portfolio animations, and innovative web solutions."
+    />
+    <meta
+      name="keywords"
+      content="WebStudio, Responsive Web Design, HTML, CSS, JavaScript, Animation, Freelance, Web Development"
+    />
+    <meta name="author" content="ustaz abdullah khairi" />
+    <title>Ustaz Abdullah Khairi Bin Haroon</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.app-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app-items {
+    margin: 10px;
+}
+
+.app-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.app-image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.app-image:hover {
+    transform: scale(1.05);
+}
+
+.app-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.app-image-text {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.app-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #404bbf;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.app-button:hover {
+    background-color: #404bbf;
+    transform: scale(1.05);
+}
+
+.seedlist-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.seedlist-table th, .seedlist-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.seedlist-table th {
+    background-color: #404bbf;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.seedlist-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.seedlist-table tr:hover {
+    background-color: #ddd;
+}
+
+.seedlist-table a {
+    color: #fff;
+    background-color: #404bbf;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.seedlist-table a:hover {
+    background-color: #404bbf;
+    transform: scale(1.05);
+}
+
+
+    </style>
+  </head>
+  <body>
+    <!-- ----- HEADER ----- -->
+    <header class="head">
+      <div class="container">
+        <!-- header nav -->
+        <nav class="head-nav">
+            <a href="./index.html" class="head-logo"
+              >Islamic<span class="head-studio">Figures</span></a
+            >
+            <ul class="head-menu">
+              <li class="head-items">
+                <a href="index.html" class="head-link active">Home</a>
+              </li>
+              <li class="head-items">
+                <a href="islamicfigures.html" class="head-link">Islamic Figures</a>
+              </li>
+              <li class="head-items">
+                <a href="contact.html" class="head-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+
+    <body>
+        <div class="container">
+
+            <h2>Ustaz Syamsul Amri Bin Ismail (Syamsul Debat)</h2>
+            <table class="seedlist-table">
+                <thead>
+                    <tr>
+                        <th>Bil.</th>
+                        <th>URL</th>
+                        <th>Topic Name</th>
+                        <th>HTTRACK (YES/NO)</th>
+                        <th>CONIFER (YES/NO)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td><a href="https://ms.wikipedia.org/wiki/Syamsul_Amri_Ismail" target="_blank">URL</a></td>
+                        <td>Ustaz Syamsul Debat</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <!-- Add other rows here -->
+                    <!-- Example row -->
+                    <tr>
+                        <td>2.</td>
+                        <td><a href="https://kmc.unirazak.edu.my/episode-1-program-ceramah-bersama-ust-syamsul-debat/" target="_blank">URL</a></td>
+                        <td>Ceramah bersama Ustaz Syamsul Debat</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                    <tr>
+                        <td>3.</td>
+                        <td><a href="https://www.youtube.com/watch?v=FgdMERqokhg" target="_blank">URL</a></td>
+                        <td>Apakah hubungan ustaz syamsul dengan keluarga nelydia</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td><a href="https://www.sinarharian.com.my/article/268977/khas/rasuah-busters/rasuah-ingatkan-diri-perlakuan-kita-dilihat-tuhan---syamsul-debat" target="_blank">URL</a></td>
+                        <td>Rasuah: Ingatkan diri perbuatan kita dilihat tuhan</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td><a href="https://www.kosmo.com.my/2023/11/15/syukur-suami-dengkur-tepi-kamu-bukan-tepi-wanita-lain/" target="_blank">URL</a></td>
+                        <td>Syukur suami dengkur tepi kamu bukan tepi wanita lain</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td><a href="https://bm.soyacincau.com/2024/03/14/5-akaun-tiktok-penceramah-boleh-diikuti-padat-ringkas-dan-santai/" target="_blank">URL</a></td>
+                        <td>5 akaun tiktok penceramah boleh diikuti, padat, ringkas dan santai</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td><a href="https://www.sinarharian.com.my/article/656958/edisi/selangor-kl/tampilkan-ikon-islamik-terkenal-didik-pelajar-cinta-program-agama" target="_blank">URL</a></td>
+                        <td>Tampilkan ikon islamik terkenal didik pelajar cinta program agama</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td><a href="https://www.hmetro.com.my/mutakhir/2023/05/965114/sudah-mencuri-menipu-pula" target="_blank">URL</a></td>
+                        <td>Sudah mencuri, menipu pula</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td><a href="https://www.hmetro.com.my/mutakhir/2018/05/338237/hidup-perlu-diteruskan-syamsul-debat#google_vignette" target="_blank">URL</a></td>
+                        <td>Hidup perlu diteruskan</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>10.</td>
+                        <td><a href="https://www.hmetro.com.my/mutakhir/2017/12/293651/usim-iktiraf-sumbangan-syamsul-debat" target="_blank">URL</a></td>
+                        <td>USIM iktiraf sumbangan Syamsul Debat</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>

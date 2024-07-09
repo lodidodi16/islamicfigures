@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+  <meta
+    name="description"
+    content="WebStudio - Responsive Web Design Project with HTML, CSS, and JavaScript. Explore interactive features, portfolio animations, and innovative web solutions."
+  />
+  <meta
+    name="keywords"
+    content="WebStudio, Responsive Web Design, HTML, CSS, JavaScript, Animation, Freelance, Web Development"
+  />
+  <meta name="author" content="Alex Smagin" />
+  <title>IslamicFigures | Fiqh Collection Page</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .head {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 10px 0;
+    }
+    .head-nav {
+      display: flex;
+      align-items: center;
+    }
+    .head-logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #333;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    .head-studio {
+      color: #6c5ce7;
+    }
+    .head-menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    .head-items {
+      margin-right: 15px;
+    }
+    .head-link {
+      text-decoration: none;
+      color: #555;
+      transition: color 0.3s ease;
+    }
+    .head-link:hover {
+      color: #6c5ce7;
+    }
+    .head-address {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+    }
+    .head-address-items {
+      margin-right: 10px;
+    }
+    .theme-switch {
+      display: none;
+    }
+    .switch-label {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+      background-color: #ccc;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .switch-label::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #fff;
+      top: 2px;
+      left: 2px;
+      transition: left 0.3s ease;
+    }
+    .theme-switch:checked + .switch-label::before {
+      left: 22px;
+    }
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 30px 0;
+    }
+    .footer-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer-logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer-studio {
+      color: #6c5ce7;
+    }
+    .footer-text {
+      margin-top: 10px;
+      color: #ccc;
+    }
+    .footer-social-text {
+      margin-bottom: 10px;
+      color: #ccc;
+    }
+    .footer-social-menu {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+    }
+    .footer-social-items {
+      margin-right: 15px;
+    }
+    .footer-social-link {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .footer-social-link:hover {
+      color: #6c5ce7;
+    }
+    .subscribe-text {
+      margin-bottom: 10px;
+      color: #ccc;
+    }
+    .footer-email {
+      padding: 8px;
+      border: 1px solid #ccc;
+      margin-right: 10px;
+      width: 200px;
+    }
+    .footer-submit-btn {
+      background-color: #6c5ce7;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .footer-submit-btn:hover {
+      background-color: #5b4bd8;
+    }
+    .scrollup {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #6c5ce7;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      display: none;
+    }
+    .scrollup__icon {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+    .features {
+      padding: 40px 0;
+      text-align: center;
+    }
+    .portfolio-btn {
+      background-color: #6c5ce7;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .portfolio-btn:hover {
+      background-color: #5b4bd8;
+    }
+    .portfolio-menu {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    .portfolio-items {
+      margin-right: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+      font-weight: 600;
+    }
+    td a {
+      color: #6c5ce7;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    td a:hover {
+      color: #5b4bd8;
+    }
+  </style>
+</head>
+<body>
+  <!-- ----- HEADER ----- -->
+  <header class="head">
+    <div class="container">
+      <!-- header nav -->
+      <nav class="head-nav">
+        <a href="index.html" class="head-logo">Islamic<span class="head-studio">Figures</span></a>
+        <ul class="head-menu">
+          <li class="head-items">
+            <a href="index.html" class="head-link">Home</a>
+          </li>
+          <li class="head-items">
+            <a href="islamicfigures.html" class="head-link">Islamic Figures</a>
+          <li class="head-items">
+            <a href="contact.html" class="head-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ----- MAIN ----- -->
+  <main>
+    <section class="features">
+      <div class="container">
+        <h1 class=>Fiqh Collection</h1><br>
+
+        <!-- features -->
+        <ul class="portfolio-menu">
+            <li class="portfolio-items">
+                <a href="fiqh.html">
+                    <button type="button" class="portfolio-btn">Fiqh</button>
+                </a>
+            </li>
+            <li class="portfolio-items">
+                <a href="aqidah.html">
+                    <button type="button" class="portfolio-btn">Aqidah</button>
+                </a>
+            </li>
+            <li class="portfolio-items">
+              <a href="hadis.html">
+                  <button type="button" class="portfolio-btn">Hadis</button>
+              </a>
+          </li>
+          <li class="portfolio-items">
+            <a href="tasawuf.html">
+                <button type="button" class="portfolio-btn">Tasawuf</button>
+            </a>
+        </li>
+        <li class="portfolio-items">
+          <a href="sejarahislam.html">
+              <button type="button" class="portfolio-btn">Sejarah Islam</button>
+          </a>
+      </li>
+        </ul>
+
+        <!-- Fiqh content here -->
+        <table>
+          <thead>
+            <tr>
+              <th>Ustaz Name</th>
+              <th>Topic</th>
+              <th>HTTRACK FOLDER</th>
+              <th>CONIFER LINK</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ustaz Don</td>
+              <td>Kepentingan Ilmu</td>
+              <td>        <!-- Download button for Conifer folder -->
+                <div class="download-button">
+                  <a href="path/to/conifer/folder" download>
+                    <button type="button" class="portfolio-btn">Download</button>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </main></td>
+              <td><a href="biodata1.html" >
+                <button type="button" class="portfolio-btn">URL</button>
+              </a></td>
+            </tr>
+            <tr>
+              <td>Ustaz Don</td>
+              <td>Dakwah Alam Maya</td>
+              <td>        <!-- Download button for Conifer folder -->
+                <div class="download-button">
+                  <a href="path/to/conifer/folder" download>
+                    <button type="button" class="portfolio-btn">Download</button>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </main></td>
+              <td><a href="biodata1.html" >
+                <button type="button" class="portfolio-btn">URL</button>
+              </a></td>
+            </tr>
+            <tr>
+              <td>Ustaz Don</td>
+              <td>Boikot</td>
+              <td>        <!-- Download button for Conifer folder -->
+                <div class="download-button">
+                  <a href="path/to/conifer/folder" download>
+                    <button type="button" class="portfolio-btn">Download</button>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </main></td>
+              <td><a href="biodata1.html" >
+                <button type="button" class="portfolio-btn">URL</button>
+              </a></td>
+            </tr>
+            <tr>
+              <td>Ustaz Don</td>
+              <td><a href="https://www.goodreads.com/book/show/28530417-sejarah-solat">Sejarah Solat</a></td>
+              <td>        <!-- Download button for Conifer folder -->
+                <div class="download-button">
+                  <a href="path/to/conifer/folder" download>
+                    <button type="button" class="portfolio-btn">Download</button>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </main></td>
+              <td><a href="biodata1.html" >
+                <button type="button" class="portfolio-btn">URL</button>
+              </a></td>
+            </tr>
+            <tr>
+              <td>Ustaz Don</td>
+              <td><a href="https://books.google.com.my/books/about/SOLAT_DAN_SELAWAT.html?id=r956BgAAQBAJ&redir_esc=y">Solat Dan Selawat</a></td>
+              <td>        <!-- Download button for Conifer folder -->
+                <div class="download-button">
+                  <a href="path/to/conifer/folder" download>
+                    <button type="button" class="portfolio-btn">Download</button>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </main></td>
+              <td><a href="biodata1.html" >
+                <button type="button" class="portfolio-btn">URL</button>
+              </a></td>
+            </tr>
+          </tbody>
+        </table>
+
+  <!-- ----- FOOTER ----- -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- footer-logo -->
+      <div class="footer-logo-container">
+        <a class="footer-logo" href="./index.html">ISLAMIC<span class="footer-studio">FIGURES</span></a>
+        <p class="footer-text">Preserving web archive collection of islamic figures based in Malaysia only.</p>
+      </div>
+
+      <!-- footer-social-menu -->
+      <div class="footer-social-container">
+        <p class="footer-social-text">Social media</p>
+        <ul class="footer-social-menu">
+          <li class="footer-social-items">
+            <a href="" class="footer-social-link">
+              <svg class="footer-social-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-items">
+            <a href="" class="footer-social-link">
+              <svg class="footer-social-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-items">
+            <a href="" class="footer-social-link">
+              <svg class="footer-social-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-items">
+            <a href="" class="footer-social-link">
+              <svg class="footer-social-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- footer-subscribe -->
+      <div class="footer-subscribe-container">
+        <p class="subscribe-text">Subscribe</p>
+        <form class="footer-subcribe-form">
+          <label class="footer-label" for="email">
+            <input class="footer-email" type="email" name="email" id="email" placeholder="E-mail" />
+          </label>
+          <button type="submit" class="footer-submit-btn">Subscribe
+            <svg class="subscribe-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-subscribe"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL UP -->
+  <button class="scrollup visually-hidden" type="button">
+    <svg class="scrollup__icon" aria-label="Scroll up icon">
+      <use href="./images/icons-sprite.svg#icon-arrow-up"></use>
+    </svg>
+  </button>
+
+  <script src="./js/scroll-up.js"></script>
+  <script src="./js/theme-switcher.js"></script>
+</body>
+</html>

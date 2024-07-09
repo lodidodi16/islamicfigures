@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta
+      name="description"
+      content="WebStudio - Responsive Web Design Project with HTML, CSS, and JavaScript. Explore interactive features, portfolio animations, and innovative web solutions."
+    />
+    <meta
+      name="keywords"
+      content="WebStudio, Responsive Web Design, HTML, CSS, JavaScript, Animation, Freelance, Web Development"
+    />
+    <meta name="author" content="Alex Smagin" />
+    <title>Ustaz Neezam Al-Banjari</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.app-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app-items {
+    margin: 10px;
+}
+
+.app-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.app-image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.app-image:hover {
+    transform: scale(1.05);
+}
+
+.app-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.app-image-text {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.app-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #404bbf;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.app-button:hover {
+    background-color: #404bbf;
+    transform: scale(1.05);
+}
+
+.seedlist-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.seedlist-table th, .seedlist-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.seedlist-table th {
+    background-color: #404bbf;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.seedlist-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.seedlist-table tr:hover {
+    background-color: #ddd;
+}
+
+.seedlist-table a {
+    color: #fff;
+    background-color: #404bbf;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.seedlist-table a:hover {
+    background-color: #404bbf;
+    transform: scale(1.05);
+}
+
+
+    </style>
+  </head>
+  <body>
+    <!-- ----- HEADER ----- -->
+    <header class="head">
+      <div class="container">
+        <!-- header nav -->
+        <nav class="head-nav">
+            <a href="./index.html" class="head-logo"
+              >Islamic<span class="head-studio">Figures</span></a
+            >
+            <ul class="head-menu">
+              <li class="head-items">
+                <a href="index.html" class="head-link active">Home</a>
+              </li>
+              <li class="head-items">
+                <a href="islamicfigures.html" class="head-link">Islamic Figures</a>
+              </li>
+              <li class="head-items">
+                <a href="contact.html" class="head-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        <!-- header address -->
+        <address class="head-address">
+          <ul class="head-address-menu">
+            <li class="head-address-items">
+              <a href="mailto:info@devstudio.com" class="head-contacts"
+                ></a
+              >
+            </li>
+            <li class="head-address-items">
+              <a href="tel:+110001111111" class="head-contacts"
+                ></a
+              >
+            </li>
+            <li class="head-address-items">
+              <span>
+                <label class="switch" aria-label="theme switch">
+                  <input class="theme-switch" type="checkbox" />
+                  <svg class="switch-icon-moon">
+                    <use href="./images/icons-sprite.svg#icon-moon"></use>
+                  </svg>
+                  <svg class="switch-icon-sun">
+                    <use href="./images/icons-sprite.svg#icon-sun"></use>
+                  </svg>
+                </label>
+              </span>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <body>
+        <div class="container">
+<br>
+            <h2>Ustaz Neezam Al-Banjari</h2>
+            <table class="seedlist-table">
+                <thead>
+                    <tr>
+                        <th>Bil.</th>
+                        <th>URL</th>
+                        <th>Topic Name</th>
+                        <th>HTTRACK (YES/NO)</th>
+                        <th>CONIFER (YES/NO)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td><a href="http://maahadtahfizibnusina.blogspot.com/2015/08/ustaz-neezam-al-banjari-menerangkan.html" target="_blank">URL</a></td>
+                        <td>Apa Kaitan Qasidah Dengan Sirah Rasulullah Oleh Ustaz Neezam Al Banjari Sempena Perasmian Surau Baru MTIS Al-Mawaddah</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td><a href="https://read.bookcreator.com/5rrwr61TCXURoHkxpKGB4V5Jpx12/O6vWai5WSkaP58ulhIRqlw/57EKWgvrTFqrGGp-86NO4A" target="_blank">URL</a></td>
+                        <td>Qasidah Majlis</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td><a href="https://www.scribd.com/document/406133345/Humko-Bulana" target="_blank">URL</a></td>
+                        <td>Humko Bulana</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td><a href="https://t.me/s/ustazneezamalbanjari?before=1360" target="_blank">URL</a></td>
+                        <td>Ustaz Neezam - Telegram</td>
+                        <td>NO</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td><a href="https://www.hmetro.com.my/rap/2021/05/703121/rabbani-akur-ikut-apa-terbaik-diputus-kerajaan" target="_blank">URL</a></td>
+                        <td>Rabbani akur, ikut apa terbaik diputus kerajaan!</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+ 
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>

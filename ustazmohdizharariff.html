@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta
+      name="description"
+      content="WebStudio - Responsive Web Design Project with HTML, CSS, and JavaScript. Explore interactive features, portfolio animations, and innovative web solutions."
+    />
+    <meta
+      name="keywords"
+      content="WebStudio, Responsive Web Design, HTML, CSS, JavaScript, Animation, Freelance, Web Development"
+    />
+    <meta name="author" content="ustaz abdullah khairi" />
+    <title>Ustaz Mohd Izhar Ariff Bin Mohd Kashim</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.app-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app-items {
+    margin: 10px;
+}
+
+.app-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.app-image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.app-image:hover {
+    transform: scale(1.05);
+}
+
+.app-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.app-image-text {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.app-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #404bbf;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.app-button:hover {
+    background-color: #404bbf;
+    transform: scale(1.05);
+}
+
+.seedlist-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.seedlist-table th, .seedlist-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.seedlist-table th {
+    background-color: #404bbf;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.seedlist-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.seedlist-table tr:hover {
+    background-color: #ddd;
+}
+
+.seedlist-table a {
+    color: #fff;
+    background-color: #404bbf;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.seedlist-table a:hover {
+    background-color: #404bbf;
+    transform: scale(1.05);
+}
+
+
+    </style>
+  </head>
+  <body>
+    <!-- ----- HEADER ----- -->
+    <header class="head">
+      <div class="container">
+        <!-- header nav -->
+        <nav class="head-nav">
+            <a href="./index.html" class="head-logo"
+              >Islamic<span class="head-studio">Figures</span></a
+            >
+            <ul class="head-menu">
+              <li class="head-items">
+                <a href="index.html" class="head-link active">Home</a>
+              </li>
+              <li class="head-items">
+                <a href="islamicfigures.html" class="head-link">Islamic Figures</a>
+              </li>
+              <li class="head-items">
+                <a href="contact.html" class="head-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+
+    <body>
+        <div class="container">
+
+            <h2>Ustaz Mohd Izhar Ariff Bin Mohd Kashim</h2>
+            <table class="seedlist-table">
+                <thead>
+                    <tr>
+                        <th>Bil.</th>
+                        <th>URL</th>
+                        <th>Topic Name</th>
+                        <th>HTTRACK (YES/NO)</th>
+                        <th>CONIFER (YES/NO)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td><a href="https://majalahwm.com/hukum-hakam-agama-mengenai-adik-beradik/" target="_blank">URL</a></td>
+                        <td>Hukum Hakam Agama Mengenai Adik Beradik</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <!-- Add other rows here -->
+                    <!-- Example row -->
+                    <tr>
+                        <td>2.</td>
+                        <td><a href="https://www.hmetro.com.my/rap/2023/09/1009768/hubungan-suami-isteri-di-depan-khalayak-perlu-ada-batas" target="_blank">URL</a></td>
+                        <td>Hubungan suami isteri di depan khalayak, perlu ada batas</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                    <tr>
+                        <td>3.</td>
+                        <td><a href="https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/forum-perdana-tekankan-kepentingan-institusi-diraja-dalam-penyatuan-ummah" target="_blank">URL</a></td>
+                        <td>Forum Perdana, tekankan kepentingan institusi diraja dalam penyatuan ummah</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td><a href="https://www.sinarharian.com.my/article/249743/berita/nasional/pentauliahan-tiada-kaitan-politik#google_vignette" target="_blank">URL</a></td>
+                        <td>Pentauliahan tiada kaitan politik'</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td><a href="https://www.sinarharian.com.my/article/239705/berita/nasional/isu-umrah-pihak-hotel-main-harga-hingga-batalkan-tempahann" target="_blank">URL</a></td>
+                        <td>Isu umrah: Pihak hotel main harga hingga batalkan tempahan</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td><a href="https://utusantv.com/2023/08/15/kurus-perlulah-mengikut-keadaan-haram-jika-bawa-mudarat-ustaz-izhar/" target="_blank">URL</a></td>
+                        <td>Kurus perlulah mengikut keadaan. Haram jika bawa mudarat
+
+                        </td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td><a href="https://www.sinarharian.com.my/article/110881/khas/wacanaquran/institusi-zakat-perlu-aktifkan-media-sosial" target="_blank">URL</a></td>
+                        <td>Institusi zakat perlu aktifkan media sosial</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td><a href="https://www.hmetro.com.my/utama/2023/06/981535/saja-busukkan-nama-baik-agamawan" target="_blank">URL</a></td>
+                        <td>Saja 'busukkan' nama baik agamawan</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td><a href="https://malaysiapost.com.my/2024/03/06/ustaz-izhar-umum-tarik-diri-dari-syarikat-suami-heliza-helmi/" target="_blank">URL</a></td>
+                        <td>Ustaz Izhar umum tarik diri dari syarikat suami Heliza Helmi</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>10.</td>
+                        <td><a href="https://www.change.org/p/malaysia-kami-menyokong-prof-madya-dato-dr-mohd-izhar-ariff-bin-mohd-kashim-sebagai-mufti-wp" target="_blank">URL</a></td>
+                        <td>Kami menyokong Prof Madya Dato' Dr Mohd Izhar Ariff bin Mohd Kashim sebagai Mufti WP
+
+                        </td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>

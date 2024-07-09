@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta
+      name="description"
+      content="WebStudio - Responsive Web Design Project with HTML, CSS, and JavaScript. Explore interactive features, portfolio animations, and innovative web solutions."
+    />
+    <meta
+      name="keywords"
+      content="WebStudio, Responsive Web Design, HTML, CSS, JavaScript, Animation, Freelance, Web Development"
+    />
+    <meta name="author" content="Alex Smagin" />
+    <title>Ustaz Don Daniyal Bin Don Biyajid</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.app-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app-items {
+    margin: 10px;
+}
+
+.app-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.app-image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.app-image:hover {
+    transform: scale(1.05);
+}
+
+.app-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.app-image-text {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.app-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #404bbf;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.app-button:hover {
+    background-color: #404bbf;
+    transform: scale(1.05);
+}
+
+.seedlist-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.seedlist-table th, .seedlist-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.seedlist-table th {
+    background-color: #404bbf;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.seedlist-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.seedlist-table tr:hover {
+    background-color: #ddd;
+}
+
+.seedlist-table a {
+    color: #fff;
+    background-color: #404bbf;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.seedlist-table a:hover {
+    background-color: #404bbf;
+    transform: scale(1.05);
+}
+
+
+    </style>
+  </head>
+  <body>
+    <!-- ----- HEADER ----- -->
+    <header class="head">
+      <div class="container">
+        <!-- header nav -->
+        <nav class="head-nav">
+            <a href="./index.html" class="head-logo"
+              >Islamic<span class="head-studio">Figures</span></a
+            >
+            <ul class="head-menu">
+              <li class="head-items">
+                <a href="index.html" class="head-link active">Home</a>
+              </li>
+              <li class="head-items">
+                <a href="islamicfigures.html" class="head-link">Islamic Figures</a>
+              </li>
+              <li class="head-items">
+                <a href="contact.html" class="head-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        <!-- header address -->
+        <address class="head-address">
+          <ul class="head-address-menu">
+            <li class="head-address-items">
+              <a href="mailto:info@devstudio.com" class="head-contacts"
+                ></a
+              >
+            </li>
+            <li class="head-address-items">
+              <a href="tel:+110001111111" class="head-contacts"
+                ></a
+              >
+            </li>
+            <li class="head-address-items">
+              <span>
+                <label class="switch" aria-label="theme switch">
+                  <input class="theme-switch" type="checkbox" />
+                  <svg class="switch-icon-moon">
+                    <use href="./images/icons-sprite.svg#icon-moon"></use>
+                  </svg>
+                  <svg class="switch-icon-sun">
+                    <use href="./images/icons-sprite.svg#icon-sun"></use>
+                  </svg>
+                </label>
+              </span>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <body>
+        <div class="container">
+<br>
+            <h2>Ustaz Don Daniyal Bin Don Biyajid</h2>
+            <table class="seedlist-table">
+                <thead>
+                    <tr>
+                        <th>Bil.</th>
+                        <th>URL</th>
+                        <th>Topic Name</th>
+                        <th>HTTRACK (YES/NO)</th>
+                        <th>CONIFER (YES/NO)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td><a href="https://diarihatimuslimah.blogspot.com/2012/01/ustaz-don-daniyal-don-biyajid.html" target="_blank">URL</a></td>
+                        <td>Biodata Ustaz Don Daniyal</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <!-- Add other rows here -->
+                    <!-- Example row -->
+                    <tr>
+                        <td>2.</td>
+                        <td><a href="https://www.facebook.com/reel/808593817538034" target="_blank">URL</a></td>
+                        <td>Petikan Ceramah</td>
+                        <td>NO</td>
+                        <td>NO</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                    <tr>
+                        <td>3.</td>
+                        <td><a href="https://www.facebook.com/ceramahustazdanustazah/videos/ustaz-don-daniyal-don-biyajid-kepentingan-ilmu/742155920834550/" target="_blank">URL</a></td>
+                        <td>Kepetingan Ilmu</td>
+                        <td>YES</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td><a href="https://sinarplus.sinarharian.com.my/kisah-masyarakat/dakwah-alam-maya-ustaz-don/" target="_blank">URL</a></td>
+                        <td>Dakwah Alam Maya</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td><a href="https://mphonline.com/products/30-minit-ustaz-don-najis" target="_blank">URL</a></td>
+                        <td>30 Minit Bersama Ustaz Don</td>
+                        <td>YES</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td><a href="https://platinummedia-x.blogspot.com/2014/08/biodata-dan-kisah-hidup-ustaz-don.html" target="_blank">URL</a></td>
+                        <td>Kisah Hidup Ustaz Don Daniyal</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td><a href="https://mediavariasi.com/2023/11/bukan-fast-food-sahaja-datang-dari-israel-ustaz-don-ulas-isu-boikot-berat-sebelah/" target="_blank">URL</a></td>
+                        <td>Boikot</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td><a href="https://www.goodreads.com/book/show/28530417-sejarah-solat" target="_blank">URL</a></td>
+                        <td>Sejarah Solat</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td><a href="https://books.google.com.my/books/about/SOLAT_DAN_SELAWAT.html?id=r956BgAAQBAJ&redir_esc=y" target="_blank">URL</a></td>
+                        <td>Solat Dan Selawat</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>10.</td>
+                        <td><a href="https://shopee.com.my/Iqra%" target="_blank">URL</a></td>
+                        <td>Iqra’ At-Taisir</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                      <td>11.</td>
+                      <td><a href="https://www.academia.edu/7681986/30_Minit_Bersama_Ustaz_Don_TV_Al_Hijrah_Suatu_Perspektif_Pendekatan_Berdakwah_Melalui_Penampilan_Personaliti" target="_blank">URL</a></td>
+                      <td>30 Minit Bersama Ustaz Don</td>
+                      <td>YES</td>
+                      <td>YES</td>
+                  </tr>
+                  <tr>
+                    <td>12.</td>
+                    <td><a href="https://beautifulnara.com/6-gambarsweetnya-ustaz-don-daniyal-isteri-tercinta/" target="_blank">URL</a></td>
+                    <td>Isteri</td>
+                    <td>YES</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                  <td>13.</td>
+                  <td><a href="https://soundcloud.com/radioikim/sets/motivasi-pagi-ustaz-don" target="_blank">URL</a></td>
+                  <td>Motivasi Pagi</td>
+                  <td>YES</td>
+                  <td>YES</td>
+              </tr>
+              <tr>
+                <td>14.</td>
+                <td><a href="https://www.facebook.com/smokedkingdombydondaniyal/?locale=ms_MY" target="_blank">URL</a></td>
+                <td>Smoked Kingdom</td>
+                <td>YES</td>
+                <td>NO</td>
+              </tr>
+              <tr>
+            <td>15.</td>
+            <td><a href="https://mahabbaten.onpay.my/" target="_blank">URL</a></td>
+            <td>Pakej Mutawiff</td>
+            <td>YES</td>
+            <td>YES</td>
+        </tr>
+         <tr>
+            <td>16.</td>
+            <td><a href="https://www.mstar.com.my/spotlight/hiburan/2018/05/02/ustaz-don-dua-isteri" target="_blank">URL</a></td>
+            <td>Kalau Kahwin Dua Seronoklah</td>
+            <td>YES</td>
+            <td>YES</td>
+        </tr>
+      <tr>
+      <td>17.</td>
+      <td><a href="https://beautifulnara.com/wardina-seru-semak-semula-ceramah-ustaz-don-daniyal/ target=" target="_blank">URL</a></td>
+      <td>Wardina Gosip</td>
+      <td>YES</td>
+      <td>YES</td>
+  </tr>
+<tr>
+<td>18.</td>
+<td><a href="https://www.mstar.com.my/spotlight/hiburan/2014/04/17/ustaz-don-kesal-difitnah"target="_blank">URL</a></td>
+<td>Isu Hadis Palsu</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>19.</td>
+<td><a href="https://phanteratigris.blogspot.com/2012/06/ustaz-don-ustaz-azhar-idrus-dan-dr-maza.html"target="_blank">URL</a></td>
+<td>Politik Musuh UMNO</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr>
+  <td>20.</td>
+  <td><a href="https://idrissulaiman.com/tag/ustaz-don-danial/"target="_blank">URL</a></td>
+  <td>CARA-CARA SAMBUT TAHUN BAHARU HIJRAH?</td>
+  <td>YES</td>
+  <td>YES</td>
+  </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>
