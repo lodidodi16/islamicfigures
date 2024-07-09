@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta
+      name="description"
+      content="WebStudio - Responsive Web Design Project with HTML, CSS, and JavaScript. Explore interactive features, portfolio animations, and innovative web solutions."
+    />
+    <meta
+      name="keywords"
+      content="WebStudio, Responsive Web Design, HTML, CSS, JavaScript, Animation, Freelance, Web Development"
+    />
+    <meta name="author" content="Alex Smagin" />
+    <title>PROF DR MOHD RIDHUAN TEE ABDULLAH </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.app-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app-items {
+    margin: 10px;
+}
+
+.app-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.app-image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.app-image:hover {
+    transform: scale(1.05);
+}
+
+.app-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.app-image-text {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.app-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #404bbf;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.app-button:hover {
+    background-color: #404bbf;
+    transform: scale(1.05);
+}
+
+.seedlist-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.seedlist-table th, .seedlist-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.seedlist-table th {
+    background-color: #404bbf;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.seedlist-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.seedlist-table tr:hover {
+    background-color: #ddd;
+}
+
+.seedlist-table a {
+    color: #fff;
+    background-color: #404bbf;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.seedlist-table a:hover {
+    background-color: #404bbf;
+    transform: scale(1.05);
+}
+
+
+    </style>
+  </head>
+  <body>
+    <!-- ----- HEADER ----- -->
+    <header class="head">
+        <div class="container">
+          <!-- header nav -->
+          <nav class="head-nav">
+              <a href="./index.html" class="head-logo"
+                >Islamic<span class="head-studio">Figures</span></a
+              >
+              <ul class="head-menu">
+                <li class="head-items">
+                  <a href="index.html" class="head-link active">Home</a>
+                </li>
+                <li class="head-items">
+                  <a href="islamicfigures.html" class="head-link">Islamic Figures</a>
+                </li>
+                <li class="head-items">
+                  <a href="contact.html" class="head-link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          <!-- header address -->
+          <address class="head-address">
+            <ul class="head-address-menu">
+              <li class="head-address-items">
+                <a href="mailto:info@devstudio.com" class="head-contacts"
+                  ></a
+                >
+              </li>
+              <li class="head-address-items">
+                <a href="tel:+110001111111" class="head-contacts"
+                  ></a
+                >
+              </li>
+              <li class="head-address-items">
+                <span>
+                  <label class="switch" aria-label="theme switch">
+                    <input class="theme-switch" type="checkbox" />
+                    <svg class="switch-icon-moon">
+                      <use href="./images/icons-sprite.svg#icon-moon"></use>
+                    </svg>
+                    <svg class="switch-icon-sun">
+                      <use href="./images/icons-sprite.svg#icon-sun"></use>
+                    </svg>
+                  </label>
+                </span>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </header>
+  
+
+    <body>
+        <div class="container">
+<br>
+            <h2>PROF DR MOHD RIDHUAN TEE ABDULLAH COLLECTION</h2>
+            <table class="seedlist-table">
+                <thead>
+                    <tr>
+                        <th>Bil.</th>
+                        <th>URL</th>
+                        <th>Topic Name</th>
+                        <th>HTTRACK (YES/NO)</th>
+                        <th>CONIFER (YES/NO)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td><a href="https://ridhuantee.blogspot.com/?fbclid=IwZXh0bgNhZW0CMTAAAR0Ue9LR-fHXdVgc0f6XrowS6NeQj7MRh1QMosm_EgRAtlWtOa43dOgeP-E_aem_AWEYUhFtpT0ZCAggLe9lraX5VKF4Q6TnobJrZcyJ3uywwjqPhD5WSFQi2SXPk35QkEZSJlpQnDZircCqo0-Y1grS" target="_blank">URL</a></td>
+                        <td>ridhuantee.blogspot</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td><a href="https://ridhuantee.blogspot.com/2019/12/bahaya-ideologi-komunis-kepada-negara.html" target="_blank">URL</a></td>
+                        <td>Bahaya ideologi komunis kepada negara</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td><a href="https://www.sinarharian.com.my/article/648617/video/berita-semasa-video/saya-sebagai-orang-cina-resah-apa-lagi-orang-melayu---ridhuan-tee" target="_blank">URL</a></td>
+                        <td>Saya sebagai orang Cina resah, apa lagi melayu?</td>
+                        <td>YES</td>
+                        <td>YES</td>
+                    </tr>
+                   
+ 
+                </tbody>
+            </table>
+            <br>
+        </div>
+    </body>
+
+    <!-- ----- FOOTER ----- -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- footer-logo -->
+        <div class="footer-logo-container">
+          <a class="footer-logo" href="./index.html"
+            >ISLAMIC<span class="footer-studio">FIGURES</span></a
+          >
+          <p class="footer-text">
+            DISCLAIMER <br>
+            This project assignment is for eduational purposes only. While <br>
+            we strive for accuracy, we make no guarantees regarding the <br>
+            completeness or reliability of the information provided. Use <br>
+            this material at your own risk.
+<br><br>
+            Copyright designed and developed by Liyan & Hawa
+          </p>
+        </div>
+
+        
+        <!-- footer-subscribe -->
+        <div class="footer-subscribe-container">
+          <p class="subscribe-text">Subscribe</p>
+          <form class="footer-subcribe-form">
+            <label class="footer-label" for="email"
+              ><input
+                class="footer-email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+            /></label>
+            <button type="submit" class="footer-submit-btn">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!----- MODAL ----->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div></div>
+        <p class="option-title">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-option">
+          <div class="option-field">
+            <label class="option-label" for="user-name">Name</label>
+            <div class="name-container">
+              <input
+                class="option-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder=""
+              />
+              <svg class="icon-name" width="18" height="24">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="option-field">
+            <label class="option-label" for="tel">Phone</label>
+            <div class="name-container">
+              <input
+                class="option-input"
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder=""
+              />
+              <svg class="icon-name" width="18" height="24">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="option-field">
+            <label class="option-label" for="mail">Email</label>
+            <div class="name-container">
+              <input
+                class="option-input"
+                type="email"
+                name="email"
+                id="mail"
+                placeholder=""
+              />
+              <svg class="icon-name" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="option-field-comment">
+            <label class="option-label" for="user-comment">Comment</label>
+            <textarea
+              class="option-textarea"
+              name="user-comment"
+              id="user-comment"
+              cols="30"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="modal-terms-container">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            /><label class="checkbox-container" for="user-privacy">
+              <span class="checkbox-icon">
+                <svg width="10" height="8" class="icon-checkbox">
+                  <use href="./images/icons.svg#icon-checked"></use></svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="modal-privacy-link" href="#">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="modal-send-btn">Send</button>
+        </form>
+        <div class="close-button">
+          <button data-modal-close type="button" class="modal-close">
+            <svg class="modal-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-vector"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!----- SCROLL UP ----->
+
+    <button class="scrollup visually-hidden" type="button">
+      <svg class="scrollup__icon" aria-label="Scroll up icon">
+        <use href="./images/icons-sprite.svg#icon-arrow-up"></use>
+      </svg>
+    </button>
+
+    <!--- script --->
+    <script src="./js/modal.js"></script>
+    <script src="./js/scroll-up.js"></script>
+    <script src="./js/sticky-header.js"></script>
+    <script src="./js/theme-switcher.js"></script>
+  </body>
+</html>

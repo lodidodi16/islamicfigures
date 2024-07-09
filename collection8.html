@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+  <meta
+    name="description"
+    content="WebStudio - Responsive Web Design Project with HTML, CSS, and JavaScript. Explore interactive features, portfolio animations, and innovative web solutions."
+  />
+  <meta
+    name="keywords"
+    content="WebStudio, Responsive Web Design, HTML, CSS, JavaScript, Animation, Freelance, Web Development"
+  />
+  <meta name="author" content="Alex Smagin" />
+  <title>IslamicFigures | PROFESOR DATO' DR. MOHD ASRI ZAINUL ABIDIN		Collection Page</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .head {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 10px 0;
+    }
+    .head-nav {
+      display: flex;
+      align-items: center;
+    }
+    .head-logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #333;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    .head-studio {
+      color: #6c5ce7;
+    }
+    .head-menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    .head-items {
+      margin-right: 15px;
+    }
+    .head-link {
+      text-decoration: none;
+      color: #555;
+      transition: color 0.3s ease;
+    }
+    .head-link:hover {
+      color: #6c5ce7;
+    }
+    .head-address {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+    }
+    .head-address-items {
+      margin-right: 10px;
+    }
+    .theme-switch {
+      display: none;
+    }
+    .switch-label {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+      background-color: #ccc;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .switch-label::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #fff;
+      top: 2px;
+      left: 2px;
+      transition: left 0.3s ease;
+    }
+    .theme-switch:checked + .switch-label::before {
+      left: 22px;
+    }
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 30px 0;
+    }
+    .footer-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer-logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer-studio {
+      color: #6c5ce7;
+    }
+    .footer-text {
+      margin-top: 10px;
+      color: #ccc;
+    }
+    .footer-social-text {
+      margin-bottom: 10px;
+      color: #ccc;
+    }
+    .footer-social-menu {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+    }
+    .footer-social-items {
+      margin-right: 15px;
+    }
+    .footer-social-link {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .footer-social-link:hover {
+      color: #6c5ce7;
+    }
+    .subscribe-text {
+      margin-bottom: 10px;
+      color: #ccc;
+    }
+    .footer-email {
+      padding: 8px;
+      border: 1px solid #ccc;
+      margin-right: 10px;
+      width: 200px;
+    }
+    .footer-submit-btn {
+      background-color: #6c5ce7;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .footer-submit-btn:hover {
+      background-color: #5b4bd8;
+    }
+    .scrollup {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #6c5ce7;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      display: none;
+    }
+    .scrollup__icon {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+    .features {
+      padding: 40px 0;
+      text-align: center;
+    }
+    .portfolio-btn {
+      background-color: #6c5ce7;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .portfolio-btn:hover {
+      background-color: #5b4bd8;
+    }
+    .portfolio-menu {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    .portfolio-items {
+      margin-right: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+      font-weight: 600;
+    }
+    td a {
+      color: #6c5ce7;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    td a:hover {
+      color: #5b4bd8;
+    }
+  </style>
+</head>
+<body>
+      <!-- ----- HEADER ----- -->
+    <header class="head">
+      <div class="container">
+        <!-- header nav -->
+        <nav class="head-nav">
+          <a href="./index.html" class="head-logo"
+            >Islamic<span class="head-studio">Figures</span></a
+          >
+          <ul class="head-menu">
+            <li class="head-items">
+              <a href="index.html" class="head-link active">Home</a>
+            </li>
+            <li class="head-items">
+              <a href="islamicfigures.html" class="head-link">Islamic Figures</a>
+            </li>
+            <li class="head-items">
+              <a href="expertise.html" class="head-link">Expertise</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- header address -->
+        <address class="head-address">
+          <ul class="head-address-menu">
+            <li class="head-address-items">
+              <a href="mailto:info@devstudio.com" class="head-contacts"
+                ></a
+              >
+            </li>
+            <li class="head-address-items">
+              <a href="contact.html" class="head-contacts"
+                >Contact</a
+              >
+            </li>
+            <li class="head-address-items">
+              <span>
+                <label class="switch" aria-label="theme switch">
+                  <input class="theme-switch" type="checkbox" />
+                  <svg class="switch-icon-moon">
+                    <use href="./images/icons-sprite.svg#icon-moon"></use>
+                  </svg>
+                  <svg class="switch-icon-sun">
+                    <use href="./images/icons-sprite.svg#icon-sun"></use>
+                  </svg>
+                </label>
+              </span>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+  <!-- ----- MAIN ----- -->
+  <main>
+    <section class="features">
+      <div class="container">
+        <h1 class=>PROFESOR DATO' DR. MOHD ASRI ZAINUL ABIDIN COLLECTION</h1><br>
+
+        
+
+        <!-- Fiqh content here -->
+        <table>
+          <thead>
+            <tr>
+              <th>Bil</th>
+              <th>Topic</th>
+              <th>HTTRACK FOLDER</th>
+              <th>CONIFER LINK</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.</td>
+              <td>PENIAGA: ANTARA SYURGA & NERAKA</td>
+              <td>        <!-- Download button for Conifer folder -->
+                <div class="download-button">
+                  <a href="https://drive.google.com/drive/folders/1N9q2RABwv0YcBzkWzh11SkEZv3yq82ia">
+                    <button type="button" class="portfolio-btn">Open</button>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </main></td>
+              <td><a href="https://drive.google.com/drive/folders/1CZiFK8ROguOYzM9gX_bjTjxcBX8AG1So" >
+                <button type="button" class="portfolio-btn">URL</button>
+              </a></td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>PUISI HADIRNYA KESEDIHAN</td>
+              <td>        <!-- Download button for Conifer folder -->
+                <div class="download-button">
+                  <a href="https://drive.google.com/drive/folders/1N9q2RABwv0YcBzkWzh11SkEZv3yq82ia">
+                    <button type="button" class="portfolio-btn">Open</button>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </main></td>
+              <td><a href="https://drive.google.com/drive/folders/1CZiFK8ROguOYzM9gX_bjTjxcBX8AG1So" >
+                <button type="button" class="portfolio-btn">URL</button>
+              </a></td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Mufti Perlis nasihat Fadhlina perbetulkan isu penggunaan istilah kafir</td>
+                <td>        <!-- Download button for Conifer folder -->
+                  <div class="download-button">
+                    <a href="https://drive.google.com/drive/folders/1N9q2RABwv0YcBzkWzh11SkEZv3yq82ia">
+                      <button type="button" class="portfolio-btn">Open</button>
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </main></td>
+                <td><a href="https://drive.google.com/drive/folders/1CZiFK8ROguOYzM9gX_bjTjxcBX8AG1So" >
+                  <button type="button" class="portfolio-btn">URL</button>
+                </a></td>
+              </tr>
+        
+          </tbody>
+        </table>
+
+  <!-- ----- FOOTER ----- -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- footer-logo -->
+      <div class="footer-logo-container">
+        <a class="footer-logo" href="./index.html"
+          >ISLAMIC<span class="footer-studio">FIGURES</span></a
+        >
+        <p class="footer-text">
+          DISCLAIMER <br>
+          This project assignment is for eduational purposes only. While <br>
+          we strive for accuracy, we make no guarantees regarding the <br>
+          completeness or reliability of the information provided. Use <br>
+          this material at your own risk.
+<br><br>
+          Copyright designed and developed by Liyan & Hawa
+        </p>
+      </div>
+
+      
+      <!-- footer-subscribe -->
+      <div class="footer-subscribe-container">
+        <p class="subscribe-text">Subscribe</p>
+        <form class="footer-subcribe-form">
+          <label class="footer-label" for="email"
+            ><input
+              class="footer-email"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+          /></label>
+          <button type="submit" class="footer-submit-btn">
+            Subscribe
+            <svg class="subscribe-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-subscribe"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <!----- MODAL ----->
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <div></div>
+      <p class="option-title">
+        Leave your contacts and we will call you back
+      </p>
+      <form class="modal-option">
+        <div class="option-field">
+          <label class="option-label" for="user-name">Name</label>
+          <div class="name-container">
+            <input
+              class="option-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder=""
+            />
+            <svg class="icon-name" width="18" height="24">
+              <use href="./images/icons.svg#icon-name"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="option-field">
+          <label class="option-label" for="tel">Phone</label>
+          <div class="name-container">
+            <input
+              class="option-input"
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder=""
+            />
+            <svg class="icon-name" width="18" height="24">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="option-field">
+          <label class="option-label" for="mail">Email</label>
+          <div class="name-container">
+            <input
+              class="option-input"
+              type="email"
+              name="email"
+              id="mail"
+              placeholder=""
+            />
+            <svg class="icon-name" width="18" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="option-field-comment">
+          <label class="option-label" for="user-comment">Comment</label>
+          <textarea
+            class="option-textarea"
+            name="user-comment"
+            id="user-comment"
+            cols="30"
+            rows="10"
+            placeholder="Text input"
+          ></textarea>
+        </div>
+        <div class="modal-terms-container">
+          <input
+            class="checkbox visually-hidden"
+            type="checkbox"
+            name="user-privacy"
+            id="user-privacy"
+            value="true"
+          /><label class="checkbox-container" for="user-privacy">
+            <span class="checkbox-icon">
+              <svg width="10" height="8" class="icon-checkbox">
+                <use href="./images/icons.svg#icon-checked"></use></svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="modal-privacy-link" href="#">Privacy Policy</a>
+          </label>
+        </div>
+        <button type="submit" class="modal-send-btn">Send</button>
+      </form>
+      <div class="close-button">
+        <button data-modal-close type="button" class="modal-close">
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!----- SCROLL UP ----->
+
+  <button class="scrollup visually-hidden" type="button">
+    <svg class="scrollup__icon" aria-label="Scroll up icon">
+      <use href="./images/icons-sprite.svg#icon-arrow-up"></use>
+    </svg>
+  </button>
+
+  <!--- script --->
+  <script src="./js/modal.js"></script>
+  <script src="./js/scroll-up.js"></script>
+  <script src="./js/sticky-header.js"></script>
+  <script src="./js/theme-switcher.js"></script>
+</body>
+</html>
