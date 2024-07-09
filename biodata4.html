@@ -7,14 +7,14 @@
   <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
   <meta
     name="description"
-    content="WebStudio - Responsive Web Design Project with HTML, CSS, and JavaScript. Explore interactive features, portfolio animations, and innovative web solutions."
+    content="Biodata profile of Ustaz Don Daniyal Bin Don Biyajid."
   />
   <meta
     name="keywords"
-    content="WebStudio, Responsive Web Design, HTML, CSS, JavaScript, Animation, Freelance, Web Development"
+    content="Ustaz Don Daniyal, Islamic Figures, Biography"
   />
-  <meta name="author" content="Alex Smagin" />
-  <title>IslamicFigures | Ustaz Mohd Izhar Ariff Collection Page</title>
+  <meta name="author" content="Your Name" /> <!-- Replace with your name -->
+  <title>Ustaz Syamsul Amri Bin Ismail (Syamsul Debat)</title>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -22,359 +22,134 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css" /> <!-- Replace with your stylesheet -->
   <style>
-    body {
-      font-family: 'Roboto', Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    .head {
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      padding: 10px 0;
-    }
-    .head-nav {
-      display: flex;
-      align-items: center;
-    }
-    .head-logo {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #333;
-      text-decoration: none;
-      margin-right: 20px;
-    }
-    .head-studio {
-      color: #6c5ce7;
-    }
-    .head-menu {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-    .head-items {
-      margin-right: 15px;
-    }
-    .head-link {
-      text-decoration: none;
-      color: #555;
-      transition: color 0.3s ease;
-    }
-    .head-link:hover {
-      color: #6c5ce7;
-    }
-    .head-address {
-      margin-left: auto;
-      display: flex;
-      align-items: center;
-    }
-    .head-address-items {
-      margin-right: 10px;
-    }
-    .theme-switch {
-      display: none;
-    }
-    .switch-label {
-      position: relative;
-      display: inline-block;
-      width: 40px;
-      height: 20px;
-      background-color: #ccc;
-      border-radius: 20px;
-      cursor: pointer;
-    }
-    .switch-label::before {
-      content: '';
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: #fff;
-      top: 2px;
-      left: 2px;
-      transition: left 0.3s ease;
-    }
-    .theme-switch:checked + .switch-label::before {
-      left: 22px;
-    }
-    .footer {
-      background-color: #333;
-      color: #fff;
-      padding: 30px 0;
-    }
-    .footer-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .footer-logo {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #fff;
-      text-decoration: none;
-    }
-    .footer-studio {
-      color: #6c5ce7;
-    }
-    .footer-text {
-      margin-top: 10px;
-      color: #ccc;
-    }
-    .footer-social-text {
-      margin-bottom: 10px;
-      color: #ccc;
-    }
-    .footer-social-menu {
-      list-style-type: none;
-      padding: 0;
-      display: flex;
-    }
-    .footer-social-items {
-      margin-right: 15px;
-    }
-    .footer-social-link {
-      color: #ccc;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    .footer-social-link:hover {
-      color: #6c5ce7;
-    }
-    .subscribe-text {
-      margin-bottom: 10px;
-      color: #ccc;
-    }
-    .footer-email {
-      padding: 8px;
-      border: 1px solid #ccc;
-      margin-right: 10px;
-      width: 200px;
-    }
-    .footer-submit-btn {
-      background-color: #6c5ce7;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .footer-submit-btn:hover {
-      background-color: #5b4bd8;
-    }
-    .scrollup {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #6c5ce7;
-      color: #fff;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      display: none;
-    }
-    .scrollup__icon {
-      width: 20px;
-      height: 20px;
-      fill: #fff;
-    }
-    .visually-hidden {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      padding: 0;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0;
-    }
-    .features {
-      padding: 40px 0;
-      text-align: center;
-    }
-    .portfolio-btn {
-      background-color: #6c5ce7;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .portfolio-btn:hover {
-      background-color: #5b4bd8;
-    }
-    .portfolio-menu {
-      list-style-type: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      margin-bottom: 30px;
-    }
-    .portfolio-items {
-      margin-right: 15px;
-    }
-    table {
+    /* Additional styles for the table */
+    .profile-table {
       width: 100%;
+      margin-top: 20px;
       border-collapse: collapse;
-      margin-bottom: 20px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      background-color: #fff;
     }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 12px;
+    .profile-table th,
+    .profile-table td {
+      padding: 10px;
+      border: 1px solid #ccc;
       text-align: left;
     }
-    th {
-      background-color: #f2f2f2;
-      font-weight: 600;
-    }
-    td a {
-      color: #6c5ce7;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-    td a:hover {
-      color: #5b4bd8;
+    .profile-table th {
+      background-color: #f0f0f0;
     }
   </style>
 </head>
 <body>
-      <!-- ----- HEADER ----- -->
-    <header class="head">
-      <div class="container">
-        <!-- header nav -->
-        <nav class="head-nav">
-          <a href="./index.html" class="head-logo"
-            >Islamic<span class="head-studio">Figures</span></a
-          >
-          <ul class="head-menu">
-            <li class="head-items">
-              <a href="index.html" class="head-link active">Home</a>
-            </li>
-            <li class="head-items">
-              <a href="islamicfigures.html" class="head-link">Islamic Figures</a>
-            </li>
-            <li class="head-items">
-              <a href="expertise.html" class="head-link">Expertise</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- header address -->
-        <address class="head-address">
-          <ul class="head-address-menu">
-            <li class="head-address-items">
-              <a href="mailto:info@devstudio.com" class="head-contacts"
-                ></a
-              >
-            </li>
-            <li class="head-address-items">
-              <a href="contact.html" class="head-contacts"
-                >Contact</a
-              >
-            </li>
-            <li class="head-address-items">
-              <span>
-                <label class="switch" aria-label="theme switch">
-                  <input class="theme-switch" type="checkbox" />
-                  <svg class="switch-icon-moon">
-                    <use href="./images/icons-sprite.svg#icon-moon"></use>
-                  </svg>
-                  <svg class="switch-icon-sun">
-                    <use href="./images/icons-sprite.svg#icon-sun"></use>
-                  </svg>
-                </label>
-              </span>
-            </li>
-          </ul>
-        </address>
-      </div>
-    </header>
+  <!-- ----- HEADER ----- -->
+  <header class="head">
+    <div class="container">
+      <!-- header nav -->
+      <nav class="head-nav">
+        <a href="./index.html" class="head-logo"
+          >Islamic<span class="head-studio">Figures</span></a
+        >
+        <ul class="head-menu">
+          <li class="head-items">
+            <a href="index.html" class="head-link active">Home</a>
+          </li>
+          <li class="head-items">
+            <a href="islamicfigures.html" class="head-link">Islamic Figures</a>
+          </li>
+          <li class="head-items">
+            <a href="expertise.html" class="head-link">Expertise</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- header address -->
+      <address class="head-address">
+        <ul class="head-address-menu">
+          <li class="head-address-items">
+            <a href="mailto:info@devstudio.com" class="head-contacts"
+              ></a
+            >
+          </li>
+          <li class="head-address-items">
+            <a href="contact.html" class="head-contacts"
+              >Contact</a
+            >
+          </li>
+          <li class="head-address-items">
+            <span>
+              <label class="switch" aria-label="theme switch">
+                <input class="theme-switch" type="checkbox" />
+                <svg class="switch-icon-moon">
+                  <use href="./images/icons-sprite.svg#icon-moon"></use>
+                </svg>
+                <svg class="switch-icon-sun">
+                  <use href="./images/icons-sprite.svg#icon-sun"></use>
+                </svg>
+              </label>
+            </span>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </header>
 
-  <!-- ----- MAIN ----- -->
+  <!-- MAIN -->
   <main>
-    <section class="features">
+    <section class="profile">
       <div class="container">
-        <h1 class=>Ustaz Mohd Izhar Ariff Collection</h1><br>
+        <h1 class="visually-hidden">Ustaz Mohd Izhar Ariff Bin Mohd Kashim</h1>
+        <div class="profile-content">
+          <div class="profile-image">
+            <img src="https://www.ukm.my/tncpi/wp-content/uploads/2022/03/Izhar-Ariff-1.jpg" alt="Ustaz Don Daniyal" width="360" height="300" />
+          </div>
+          <div class="profile-details">
+            <br>
+            <h2 class="profile-name">Ustaz Mohd Izhar Ariff Bin Mohd Kashim</h2>
 
-        
-
-        <!-- Fiqh content here -->
-        <table>
-          <thead>
-            <tr>
-              <th>Bil</th>
-              <th>Topic</th>
-              <th>HTTRACK FOLDER</th>
-              <th>CONIFER LINK</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1.</td>
-              <td>Hukum Hakam Agama Mengenai Adik Beradik</td>
-              <td>        <!-- Download button for Conifer folder -->
-                <div class="download-button">
-                  <a href="https://drive.google.com/drive/folders/1APs3FWHWuKgqV5JFpW-TJobejpKQTPIm">
-                    <button type="button" class="portfolio-btn">Open</button>
-                  </a>
-                </div>
-              </div>
-            </section>
-          </main></td>
-              <td><a href="https://conifer.rhizome.org/farisahshukor29/ustazizhar/manage" >
-                <button type="button" class="portfolio-btn">URL</button>
-              </a></td>
-            </tr>
-            <tr>
-              <td>2.</td>
-              <td>Gagal tunai umrah kerana Covid-19, semua pihak diingat bersangka baik...</td>
-              <td>        <!-- Download button for Conifer folder -->
-                <div class="download-button">
-                  <a href="https://drive.google.com/drive/folders/1APs3FWHWuKgqV5JFpW-TJobejpKQTPIm">
-                    <button type="button" class="portfolio-btn">Open</button>
-                  </a>
-                </div>
-              </div>
-            </section>
-          </main></td>
-              <td><a href="https://conifer.rhizome.org/farisahshukor29/ustazizhar/manage" >
-                <button type="button" class="portfolio-btn">URL</button>
-              </a></td>
-            </tr>
-            <tr>
-                <td>3.</td>
-                <td>Ustaz Izhar umum tarik diri dari syarikat suami Heliza Helmi</td>
-                <td>        <!-- Download button for Conifer folder -->
-                  <div class="download-button">
-                    <a href="https://drive.google.com/drive/folders/1APs3FWHWuKgqV5JFpW-TJobejpKQTPIm">
-                      <button type="button" class="portfolio-btn">Open</button>
-                    </a>
-                  </div>
-                </div>
-              </section>
-            </main></td>
-                <td><a href="https://conifer.rhizome.org/farisahshukor29/ustazizhar/manage" >
-                  <button type="button" class="portfolio-btn">URL</button>
-                </a></td>
+            <!-- Table -->
+            <table class="profile-table">
+              <thead>
+                <tr>
+                  <th>Full Name</th>
+                  <td>Mohd Izhar Ariff Bin Mohd Kashim</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Birthdate</th>
+                  <td>01/1979</td> <!-- Replace with actual birthdate -->
+                </tr>
+                <tr>
+                  <th>Place of Birth</th>
+                  <td>Petaling Jaya, Selangor</td> <!-- Replace with actual place of birth -->
+                </tr>
+                <tr>
+                  <th>Nationality</th>
+                  <td>Malaysian</td> <!-- Replace with actual nationality -->
+                </tr>
+                <tr>
+                  <th>Education</th>
+                  <td>Fakulti Pengajian Islam, UKM,<br>
+                    Kuliah Syariah, al-Azhar, Tanta, Mesir, <br>
+                    Kolej Badaruddin, Damascus, Syiria  </td> <!-- Replace with actual education details -->
+                </tr>
+                <tr>
+                    <th>Seedlist</th>
+                    <td><a href="ustazmohdizharariff.html">Click Here</a></td>
+                </tr>
+                <tr>
+                  <th>Collection<br> (HTTRACK & <br>CONIFER)</th>
+                  <td><a href="collection4.html">Click Here</a></td>
               </tr>
-        
-          </tbody>
-        </table>
+              </tbody>
+            </table>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <br>
 
   <!-- ----- FOOTER ----- -->
   <footer class="footer">
