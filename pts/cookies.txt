@@ -1,0 +1,10 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+tiktok.com	TRUE	/	FALSE	1999999999	_ttp	2gl8uQ8ZsrHW2jusY0PQclYVmaX
+analytics.tiktok.com	TRUE	/	FALSE	1999999999	SameSite	None
+pts.com.my	TRUE	/	FALSE	1999999999	exp_last_visit	1400901014
+pts.com.my	TRUE	/	FALSE	1999999999	exp_last_activity	1716261067
+pts.com.my	TRUE	/	FALSE	1999999999	exp_tracker	%7B%220%22%3A%22assets%2Fpts2019%2Fscripts%2Fowl%2Fowl.video.play.png%22%2C%221%22%3A%22penulis%2Fustaz-abdullah-khairi%22%2C%22token%22%3A%22052a049e304f06f479e9e60215819a35dc2f2fd03629e8f3eefba326f1a948cecb7d95536a233e5c8cff726750ce67a8%22%7D
+pts.com.my	TRUE	/	FALSE	1999999999	exp_csrf_token	70be0eac4376e0b9528d2eaf3e892c49722da11f
+pts.com.my	TRUE	/	FALSE	1999999999	SameSite	Lax
+
